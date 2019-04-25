@@ -4,7 +4,7 @@ library(DiagrammeR)
 library(pcaPP)
 source("EquitiesModelSetup.R")
 source("EquitiesData.R")
-#sp1018 <- get_tq_sp500_data('2010-01-01','2018-12-31')
+sp1018 <- get_tq_sp500_data('2010-01-01','2018-12-31')
 head(sp1018)
 
 ad <- sp1018 %>% dplyr::filter(symbol == 'AAPL')

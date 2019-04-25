@@ -13,7 +13,7 @@ head(ad)
 start <- 20100104
 end <- 20181227
 ffdat <- get_KFDL_3Factor(start,end)
-xgexog <- xgboost_return_exog(ad$adjusted, c(1,2,3,4,5), c(2,5,10,20,30,40), ffdat[-(1:2),])
+xgexog <- xgboost_return_exog(ad$adjusted, c(1,2,3,4,5), c(2,5,10,20,30,40), ffdat[-1,])
 head(xgexog,10)
 
 
